@@ -5,6 +5,12 @@ import sys
 import cytocraft
 import pkg_resources
 
+if not os.path.exists("compare"):
+    os.makedirs("compare")
+if not os.path.exists("data"):
+    os.makedirs("data")
+
+
 
 # 生成点云文件
 print("生成点云文件中...")
